@@ -1,8 +1,18 @@
 
 list_1 = [i for i in range(1, 1000)]
 
+def bisect_search(sorted_list: list, element: int | float):
+    def bisect_search_helper(sorted_list, element, low, high):
+        pass
 
-def bisect_search2(L, element):
+
+    if len(sorted_list) == 0:
+        return False
+    else:
+        bisect_search_helper(sorted_list, element, 0, len(sorted_list) - 1)
+
+
+def bisect_search2(sorted_list, element):
     def bisect_search_helper(L, element, low, high):
         if high == low:
             return L[low] == element
